@@ -25,3 +25,17 @@ To delete everything & storage volume container
 
 Links:
 - https://unkkuri.com/blog/unkkuri-blog-1/post/odoo-12-in-docker-container-25#blog_content
+
+# Node-Red Containerized
+
+Create node-red inside your machine to test the connections and simulate for MQTT
+
+Execute node-red container:
+>chmod +x dockerrun_node-red.sh
+
+>./dockerrun_node-red.sh
+
+To delete node-red & storage volume of container
+>chmod +x delete_node-red.sh
+
+>./delete_node-red.sh
