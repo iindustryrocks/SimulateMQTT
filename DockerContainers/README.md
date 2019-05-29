@@ -11,6 +11,8 @@ Attribute permission to all scripts:
 ## Create & Run all containers
 >./CreateScripts/create_all.sh
 
+>./DockerRun/dockerrun_all.sh
+
 ## Delete all containers
 >./DeleteScripts/delete_all.sh
 

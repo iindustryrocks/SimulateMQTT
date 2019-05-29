@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sh ./create_postgres.sh
-sh ./create_odoo.sh
-sh ./create_node-red.sh
-sh ./create_mosquitto.sh
+CreateScripts/create_postgres.sh
+CreateScripts/create_odoo.sh
+CreateScripts/create_node-red.sh
+CreateScripts/create_mosquitto.sh

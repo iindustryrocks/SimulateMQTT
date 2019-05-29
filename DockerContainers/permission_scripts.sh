@@ -9,6 +9,7 @@ chmod +x CreateScripts/create_postgres.sh \
     DockerRun/dockerrun_odoo.sh \
     DockerRun/dockerrun_node-red.sh \
     DockerRun/dockerrun_mosquitto.sh \
+    DockerRun/dockerrun_all.sh \
     DeleteScripts/delete_odoo.sh \
     DeleteScripts/delete_Postgres.sh \
     DeleteScripts/delete_node-red.sh \
