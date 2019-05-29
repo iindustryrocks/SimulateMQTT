@@ -2,26 +2,26 @@
 Create odoo inside containers docker
 
 Execute first posgres docker
->chmod +x dockerrun_postgres.sh
+>chmod +x DockerRun/dockerrun_postgres.sh
 
->./dockerrun_postgres.sh
+>./DockerRun/dockerrun_postgres.sh
 
 Execute odoo container:
->chmod +x dockerrun_odoo.sh
+>chmod +x DockerRun/dockerrun_odoo.sh
 
->./dockerrun_odoo.sh
+>./DockerRun/dockerrun_odoo.sh
 
 Show the logs:
->chmod +x posgres_log.sh odoo_logs.sh
+>chmod +x LogsScripts/posgres_log.sh LogsScripts/odoo_logs.sh
 
->./posgres_log.sh
+>./LogsScripts/posgres_log.sh
 
->./odoo_logs.sh
+>./LogsScripts/odoo_logs.sh
 
 To delete everything & storage volume container
->chmod +x delete_odoo-Postgres.sh
+>chmod +x DeleteScripts/delete_odoo-Postgres.sh
 
->./delete_odoo-Postgres.sh
+>./DeleteScripts/delete_odoo-Postgres.sh
 
 Links:
 - https://unkkuri.com/blog/unkkuri-blog-1/post/odoo-12-in-docker-container-25#blog_content
@@ -31,11 +31,11 @@ Links:
 Create node-red inside your machine to test the connections and simulate for MQTT
 
 Execute node-red container:
->chmod +x dockerrun_node-red.sh
+>chmod +x DockerRun/dockerrun_node-red.sh
 
->./dockerrun_node-red.sh
+>./DockerRun/dockerrun_node-red.sh
 
 To delete node-red & storage volume of container
->chmod +x delete_node-red.sh
+>chmod +x DeleteScripts/delete_node-red.sh
 
->./delete_node-red.sh
+>./DeleteScripts/delete_node-red.sh
