@@ -11,11 +11,11 @@ chmod +x CreateScripts/create_postgres.sh \
     DockerRun/dockerrun_mosquitto.sh \
     DockerRun/dockerrun_all.sh \
     DeleteScripts/delete_odoo.sh \
-    DeleteScripts/delete_Postgres.sh \
+    DeleteScripts/delete_postgres.sh \
     DeleteScripts/delete_node-red.sh \
     DeleteScripts/delete_mosquitto.sh \
     DeleteScripts/delete_all.sh \
-    LogsScripts/posgres_logs.sh \
+    LogsScripts/postgres_logs.sh \
     LogsScripts/odoo_logs.sh \
     LogsScripts/node-red_logs.sh \
     LogsScripts/mosquitto_logs.sh

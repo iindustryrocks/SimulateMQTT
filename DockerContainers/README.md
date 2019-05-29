@@ -26,14 +26,14 @@ Create after, odoo:
 >./CreateScripts/create_odoo.sh
 
 Show logs:
->./LogsScripts/posgres_logs.sh
+>./LogsScripts/postgres_logs.sh
 
 >./LogsScripts/odoo_logs.sh
 
 To delete every odoo related containers & storage volumes:
 >./DeleteScripts/delete_odoo.sh
 
->./DeleteScripts/delete_Postgres.sh
+>./DeleteScripts/delete_postgres.sh
 
 Remove & Run again:
 >./DockerRun/dockerrun_postgres.sh
