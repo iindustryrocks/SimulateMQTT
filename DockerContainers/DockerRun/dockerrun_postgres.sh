@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-docker volume create --name postgres-db-data
-
+docker stop postgres-db
 docker rm postgres-db
 
 docker run -d --name postgres-db  \
