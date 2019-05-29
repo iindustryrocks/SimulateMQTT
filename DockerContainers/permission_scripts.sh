@@ -14,4 +14,6 @@ chmod +x CreateScripts/dockercreate_postgres.sh \
     DeleteScripts/delete_mosquitto.sh \
     LogsScripts/posgres_logs.sh \
     LogsScripts/odoo_logs.sh \
+    LogsScripts/node-red_logs.sh \
+    LogsScripts/mosquitto_logs.sh
 
