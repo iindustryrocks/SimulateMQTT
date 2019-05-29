@@ -6,10 +6,10 @@ The scripts are tested on Linux System. Do not use on Docker Windows, this will 
 Attribute permission to all scripts:
 >chmod +x permission_scripts.sh
 
-##Create & Run all containers
+## Create & Run all containers
 >./CreateScripts/create_all.sh
 
-##Delete all containers
+## Delete all containers
 >./DeleteScripts/delete_all.sh
 
 ## Run specific container
