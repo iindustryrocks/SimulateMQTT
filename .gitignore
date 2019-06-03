@@ -7,5 +7,5 @@
 *.iml
 out
 gen
-.gitignore
 odooContainerized.iml
+/DockerContainers/node-red-data/*
