@@ -2,4 +2,4 @@
 
 docker stop node-red
 docker rm node-red
-#docker volume rm node-red-data
+docker volume rm nodered-data
