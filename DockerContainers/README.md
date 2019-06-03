@@ -16,6 +16,33 @@ Attribute permission to all scripts:
 ## Delete all containers
 >./DeleteScripts/delete_all.sh
 
+## Browser locations:
+
+Odoo: http://localhost:8069
+
+Node-Red: http://localhost:1880
+
+## Default ports used:
+
+Postgres: `5432`
+
+Odoo: `8069`
+
+Node-Red: `1880`
+
+Mosquitto: `1883` `9001`
+
+## Odoo Configurations
+First time access odoo, introduce DB name (ex: odoo), email, and password.
+odoo_configuration_1.png
+
+After that, install plugin manufacturing.
+
+## Node-red Configurations
+Need to install pallete: node-red-contrib-odoo-xmlrpc-with-filters
+
+Go to Settings > Pallete > Install > node-red-contrib-odoo-xmlrpc-with-filters
+
 ## Run specific container
 
 ### ODOO (with Postgres)
