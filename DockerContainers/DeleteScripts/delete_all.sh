@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 DeleteScripts/delete_postgres.sh
 DeleteScripts/delete_odoo.sh

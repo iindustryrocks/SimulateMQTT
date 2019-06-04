@@ -32,6 +32,18 @@ Node-Red: `1880`
 
 Mosquitto: `1883` `9001`
 
+## Containers Storage Volumes Names
+
+Follow the DockerContainers/BackupContainers instructions to backup & restore the volume containers.
+
+Postgres: `postgres-db-data`
+
+Odoo: `odoo-data` `odoo-extra-addons`
+
+Node-Red: `nodered-data`
+
+Mosquitto: `mosquitto-data` `mosquitto-log`
+
 ## Odoo Configurations
 First time access odoo, introduce DB name (ex: odoo), email, and password.
 odoo_configuration_1.png
@@ -86,7 +98,7 @@ The saved mosquitto.conf is to ensure the persistence data.
 Create mosquitto container:
 >./CreateScripts/create_mosquitto.sh
 
-Show logs:
+Show logs (this probably not show any logs, so use the specified container volume to see this logs):
 >./LogsScripts/mosquitto_logs.sh
 
 To delete node-red & storage volume of container:

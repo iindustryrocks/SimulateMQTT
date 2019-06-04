@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 CreateScripts/create_postgres.sh
 CreateScripts/create_odoo.sh

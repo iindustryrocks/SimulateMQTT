@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 DockerRun/dockerrun_postgres.sh
 DockerRun/dockerrun_odoo.sh
