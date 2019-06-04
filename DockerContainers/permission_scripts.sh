@@ -18,5 +18,9 @@ chmod +x CreateScripts/create_postgres.sh \
     LogsScripts/postgres_logs.sh \
     LogsScripts/odoo_logs.sh \
     LogsScripts/node-red_logs.sh \
-    LogsScripts/mosquitto_logs.sh
+    LogsScripts/mosquitto_logs.sh \
+    BackupContainers/volume_backup.sh \
+    BackupContainers/volume_restore.sh \
+    BackupContainers/volume_backup_all.sh \
+    BackupContainers/volume_restore_all.sh
 

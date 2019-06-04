@@ -8,4 +8,4 @@
 out
 gen
 odooContainerized.iml
-/DockerContainers/node-red-data/*
+/DockerContainers/backups/
