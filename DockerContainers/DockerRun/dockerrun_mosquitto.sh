@@ -9,4 +9,3 @@ docker run -d --name mosquitto \
     -v mosquitto-data:/mosquitto/data \
     -v mosquitto-log:/mosquitto/log \
     eclipse-mosquitto
-
