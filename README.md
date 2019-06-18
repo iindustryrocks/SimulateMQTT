@@ -1,2 +1,108 @@
-# SimulateMQTT
-Create Odoo - Node-Red inside containers docker
+# Docker Containers
+Simulate the MQTT full environment with Docker containers.
+
+The scripts are tested on Linux System. Do not use on Docker Windows, this will not work, because of storage volumes (persistence data)
+
+Attribute permission to all scripts:
+>chmod +x permission_scripts.sh
+
+>./permission_scripts.sh
+
+## Create & Run all containers
+>./CreateScripts/create_all.sh
+
+>./DockerRun/dockerrun_all.sh
+
+## Delete all containers
+>./DeleteScripts/delete_all.sh
+
+## Browser locations:
+
+Odoo: http://localhost:8069
+
+Node-Red: http://localhost:1880
+
+## Default ports used:
+
+Postgres: `5432`
+
+Odoo: `8069`
+
+Node-Red: `1880`
+
+Mosquitto: `1883` `9001`
+
+## Containers Storage Volumes Names
+
+Follow the DockerContainers/BackupContainers instructions to backup & restore the volume containers.
+
+Postgres: `postgres-db-data`
+
+Odoo: `odoo-data` `odoo-extra-addons`
+
+Node-Red: `nodered-data`
+
+Mosquitto: `mosquitto-data` `mosquitto-log`
+
+## Odoo Configurations
+First time access odoo, introduce DB name (ex: odoo), email, and password.
+odoo_configuration_1.png
+
+After that, install plugin manufacturing.
+
+## Node-red Configurations
+Need to install pallete: node-red-contrib-odoo-xmlrpc-with-filters
+
+Go to Settings > Pallete > Install > node-red-contrib-odoo-xmlrpc-with-filters
+
+## Run specific container
+
+### ODOO (with Postgres)
+Create first, Postgres DB:
+>./CreateScripts/create_postgres.sh
+
+Create after, odoo:
+>./CreateScripts/create_odoo.sh
+
+Show logs:
+>./LogsScripts/postgres_logs.sh
+
+>./LogsScripts/odoo_logs.sh
+
+To delete every odoo related containers & storage volumes:
+>./DeleteScripts/delete_odoo.sh
+
+>./DeleteScripts/delete_postgres.sh
+
+Remove & Run again:
+>./DockerRun/dockerrun_postgres.sh
+
+>./DockerRun/dockerrun_odoo.sh
+
+### Node-Red
+Create node-red container:
+>./DockerRun/dockerrun_node-red.sh
+
+Show logs:
+>./LogsScripts/node-red_logs.sh
+
+To delete node-red & storage volume of container:
+>./DeleteScripts/delete_node-red.sh
+
+Remove & Run again:
+>./DockerRun/dockerrun_node-red.sh
+
+### Mosquitto
+The saved mosquitto.conf is to ensure the persistence data.
+
+Create mosquitto container:
+>./CreateScripts/create_mosquitto.sh
+
+Show logs (this probably not show any logs, so use the specified container volume to see this logs):
+>./LogsScripts/mosquitto_logs.sh
+
+To delete node-red & storage volume of container:
+>./DeleteScripts/delete_mosquitto.sh
+
+Remove & Run again:
+>./DockerRun/dockerrun_mosquitto.sh
