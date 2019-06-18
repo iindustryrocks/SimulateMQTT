@@ -48,4 +48,4 @@ fi
 
 echo 'Run busybox for tar volume path to file:' backup_$(echo $VOLUME_NAME).tar
 # tar cvf
-sudo docker run --rm --volumes-from $CONTAINER_NAME -v $(pwd)/backups:/backup busybox tar cvf /backup/backup_$(echo $VOLUME_NAME).tar $CONTAINER_DATA_PATH
+sudo docker run --rm --volumes-from $CONTAINER_NAME -v $(pwd)/backups:/backup busybox tar cf /backup/backup_$(echo $VOLUME_NAME).tar $CONTAINER_DATA_PATH
