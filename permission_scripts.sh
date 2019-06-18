@@ -1,7 +1,6 @@
 #!/bin/bash
 
-chmod +x CreateScripts/create_postgres.sh \
-    CreateScripts/create_odoo.sh \
+chmod +x CreateScripts/create_odoo.sh \
     CreateScripts/create_node-red.sh \
     CreateScripts/create_mosquitto.sh \
     CreateScripts/create_all.sh \
@@ -21,6 +20,6 @@ chmod +x CreateScripts/create_postgres.sh \
     LogsScripts/mosquitto_logs.sh \
     BackupContainers/volume_backup.sh \
     BackupContainers/volume_restore.sh \
-    BackupContainers/volume_backup_all.sh \
-    BackupContainers/volume_restore_all.sh
+    BackupContainers/backup_all.sh \
+    BackupContainers/restore_all.sh
 

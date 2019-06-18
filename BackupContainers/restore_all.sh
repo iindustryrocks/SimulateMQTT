@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Container postgres-db
-BackupContainers/volume_restore.sh postgres-db postgres-db-data
-
 # Container odoo
 BackupContainers/volume_restore.sh odoo odoo-data
 BackupContainers/volume_restore.sh odoo odoo-extra-addons
@@ -13,3 +10,6 @@ BackupContainers/volume_restore.sh mosquitto mosquitto-log
 
 # Container Node-red
 BackupContainers/volume_restore.sh node-red nodered-data
+
+# RUN again all containers
+$(pwd)/DockerRun/dockerrun_all.sh

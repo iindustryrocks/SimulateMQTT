@@ -14,13 +14,13 @@ Usage can be like this:
 
 > volume_restore.sh new_container
 
-OR
+OR (**Use this steps instead!**)
 
-> chmod +x volume_backup.sh volume_restore.sh volume_backup_all.sh volume_restore_all.sh
+> chmod +x volume_backup.sh volume_restore.sh backup_all.sh restore_all.sh
 
-> volume_backup_all.sh 
+> backup_all.sh 
 
-> volume_restore_all.sh
+> sudo restore_all.sh
 
 Assumptions are: backup file is named backup.tar, it resides in the same directory as backup and restore script, volume name is the same between containers.
 

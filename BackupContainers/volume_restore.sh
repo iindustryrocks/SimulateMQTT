@@ -29,4 +29,4 @@ fi
 
 echo 'Run busybox for tar volume path from file:' backup_$(echo $NEW_VOLUME_NAME).tar
 # tar xvf
-sudo docker run --rm --volumes-from $NEW_CONTAINER_NAME -v $(pwd)/backups:/backup busybox tar xvf /backup/backup_$(echo $NEW_VOLUME_NAME).tar
+sudo docker run --rm --volumes-from $NEW_CONTAINER_NAME -v $(pwd)/backups:/backup busybox tar xf /backup/backup_$(echo $NEW_VOLUME_NAME).tar
