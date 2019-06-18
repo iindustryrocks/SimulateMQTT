@@ -30,7 +30,7 @@ From root directory:
 follow the manual backup on above setup on (**ODOO BACKUP/RESTORE Database**)
 
 From root directory:
->./BackupContainers/volume_backup_all.sh
+>./BackupContainers/backup_all.sh
 
 ## First Restore
 From root directory:
@@ -40,7 +40,7 @@ From root directory:
 
 >./DockerRun/dockerrun_all.sh
 
->./BackupContainers/volume_restore_all.sh
+>./BackupContainers/restore_all.sh
 
 **Attention** `after backup, if you need to restore Odoo`, 
 follow the manual restore on above setup on (**ODOO BACKUP/RESTORE Database**)
