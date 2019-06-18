@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Container postgres-db
-BackupContainers/volume_restore.sh postgres-db postgres-db-data
-
 # Container odoo
 BackupContainers/volume_restore.sh odoo odoo-data
 BackupContainers/volume_restore.sh odoo odoo-extra-addons

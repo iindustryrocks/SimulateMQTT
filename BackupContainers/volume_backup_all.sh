@@ -3,9 +3,6 @@
 # Create backup folder
 mkdir -p $(pwd)/backups
 
-# Container postgres-db
-BackupContainers/volume_backup.sh postgres-db postgres-db-data /var/lib/postgresql/data
-
 # Container odoo
 BackupContainers/volume_backup.sh odoo odoo-data /var/lib/odoo
 BackupContainers/volume_backup.sh odoo odoo-extra-addons /mnt/extra-addons
