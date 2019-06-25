@@ -4,8 +4,8 @@
 mkdir -p $(pwd)/backups
 
 # Container odoo
-BackupContainers/volume_backup.sh odoo odoo-data /var/lib/odoo
-BackupContainers/volume_backup.sh odoo odoo-extra-addons /mnt/extra-addons
+#BackupContainers/volume_backup.sh odoo odoo-data /var/lib/odoo
+#BackupContainers/volume_backup.sh odoo odoo-extra-addons /mnt/extra-addons
 
 # Container Mosquitto
 BackupContainers/volume_backup.sh mosquitto mosquitto-data /mosquitto/data
